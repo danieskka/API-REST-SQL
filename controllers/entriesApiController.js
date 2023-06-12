@@ -1,14 +1,5 @@
 const entry = require('../models/entries'); // Importar el modelo de la BBDD
 
-//getEntries
-// if(hay email)
-//     busca por mail
-// else
-//     busca todo
-
-
-// GET http://localhost:3000/entries --> ALL
-// GET http://localhost:3000/entries?email=hola@gmail.com --> por email
 const getEntries = async (req, res) => {
     let entries;
     if (req.query.email) {

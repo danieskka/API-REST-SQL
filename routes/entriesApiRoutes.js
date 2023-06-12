@@ -10,15 +10,4 @@ entriesApiRouter.delete('/', entriesApiController.deleteEntry);
 
 module.exports = entriesApiRouter;
 
-// GET http://localhost:3000/api/entries --> ALL
 // GET http://localhost:3000/api/entries?email=hola@gmail.com --> por email
-// POST http://localhost:3000/api/entries
-/*
-{
-    "new_title": "Nueva Noticia...",
-    "title":"noticia desde Node",
-    "content":"va a triunfar esto2",
-    "email":"alejandru@thebridgeschool.es",
-    "category":"sucesos"
-}
-    */
