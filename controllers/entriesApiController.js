@@ -11,14 +11,6 @@ const getEntries = async (req, res) => {
     res.status(200).json(entries); // [] con las entries encontradas
 }
 
-//createEntry
-// POST http://localhost:3000/api/entries
-// let newEntry = {
-//     title:"noticia desde Node",
-//     content:"va a triunfar esto2",
-//     email:"alejandru@thebridgeschool.es",
-//     category:"sucesos"}
-
 // Crear entry por email
 const createEntry = async (req, res) => {
     const newEntry = req.body; // {title,content,email,category}

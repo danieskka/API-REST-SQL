@@ -68,11 +68,11 @@ const updateAuthor = async (author) => {
 // DELETE 
 
 const deleteAuthor = async (author) => {
-    const { name } = author;
+    const { email } = author;
     let client, result;
     try {
         client = await pool.connect(); // Espera a abrir conexion
-        const data = await client.query(queries.deleteAuthor,[name])
+        const data = await client.query(queries.deleteAuthor,[email])
         result = data.rowCount
     } catch (err) {
         console.log(err);
